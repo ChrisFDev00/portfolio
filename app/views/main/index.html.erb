@@ -1,0 +1,48 @@
+<div class="container vh-300 d-flex flex-column justify-content-center align-items-center mt-2">
+  <!-- Text Section -->
+  <div class="row justify-content-center mb-4">
+    <div class="col-12">
+      <div class="text-area p-5">
+        <p class="font-monospace text-center mb-0 fw-bolder"> What is this? <br> </p>
+        <p class="font-monospace text-center mb-0">
+          While this site exists in its infancy, it will soon serve as my personal website with an admin control centre for the standard CRUD.
+          This will be deployed with CI/CD configurations against a test suite to contribute to uptime. <br><br>
+
+          This site will serve as a persistent sandbox for my learning experiences as a publicly documented log of the things I do and learn as a developer. <br></br>
+
+          Now, it is written in Ruby on Rails which I know is hardly the most popular framework, and templates exist for sites like this in CMS-based frameworks like Astor and Umbraco.
+          However, I've found the Rails community to be incredibly welcoming to learn from and rails can by default return .json from its controllers.
+
+          As such, when this site looks as it should in its Rails implementation, I will learn subdomains and treat the back-end as a headless API for other front-end frameworks. <br><br>
+
+          Wishing you all the best and I look forward to working with you, <br>
+          Chris
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- QR Code Cards -->
+  <div class="row justify-content-center">
+    <div class="col-auto mb-2">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">GitHub</h5>
+          <div class="qr-code">
+            <%= raw @qr_github %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-auto mb-2">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">LinkedIn</h5>
+          <div class="qr-code">
+            <%= raw @qr_linkedin %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
