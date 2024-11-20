@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem 'rqrcode', '~> 2.2'
+gem "rqrcode", "~> 2.2"
 
 gem "image_processing", "~> 1.2"
 

@@ -3,33 +3,34 @@
     <div class="row align-items-center w-100">
       <!-- Logo and Name on the Left -->
       <div class="col text-start d-flex align-items-center">
-        <%= image_tag("opswole.png", class: "d-inline-block me-2", height: '40', width: '40') %>
-        <span class="align-middle">Christopher Fagg</span>
+        <%= link_to root_path, class: "d-flex align-items-center text-decoration-none" do %>
+          <%= image_tag("opswole.png", class: "d-inline-block me-2", height: '40', width: '40') %>
+          <span class="align-middle">Christopher Fagg</span>
+        <% end %>
       </div>
 
       <!-- Center Navigation -->
       <div class="col text-center">
         <ul class="navbar-nav d-flex flex-row justify-content-center mb-0">
           <li class="nav-item mx-3">
-            <a class="nav-link" href="#">Projects</a>
+            <%= link_to 'Projects', root_path, class: 'nav-link' %>
           </li>
           <li class="nav-item mx-3">
-            <a class="nav-link" href="#">Employment</a>
+            <%= link_to 'Employment', root_path, class: 'nav-link' %>
           </li>
           <li class="nav-item mx-3">
-            <a class="nav-link" href="#">About Me</a>
+            <%= link_to 'About Me', root_path, class: 'nav-link' %>
           </li>
           <li class="nav-item mx-3">
-            <a class="nav-link" href="#">Blog</a>
+            <%= link_to 'Blog', root_path, class: 'nav-link' %>
           </li>
         </ul>
       </div>
 
       <!-- Button on the Right -->
       <div class="col text-end">
-        <%= button_to 'Admin Controls', admin_show_path, method: :get, class: 'btn btn-outline-info' %>
+        <%= link_to 'Admin Controls', admin_show_path, class: 'btn btn-outline-info' %>
       </div>
     </div>
   </div>
 </nav>
-
